@@ -9,6 +9,7 @@
     "yarn": "Please use pnpm instead of yarn"
   },
   "scripts": {
+    "sync:upstream": "powershell -ExecutionPolicy Bypass -File scripts/sync-upstream.ps1",
     "build": "node scripts/run-many.js build:core build:ui build:parallel",
     "build:core": "pnpm -F @prompt-optimizer/core build",
     "build:ui": "pnpm -F @prompt-optimizer/ui build",
